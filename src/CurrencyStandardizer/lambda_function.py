@@ -2,7 +2,7 @@ import json
 import boto3
 import csv
 import io
-import os
+
 from decimal import Decimal
 import logging
 
@@ -15,8 +15,8 @@ def lambda_handler(event, context):
     logging.info(json.dumps(event))
     
     # Replace with your actual bucket and table names
-    processed_bucket = os.environ['PROCESSED_BUCKET']
-    table_name = os.environ['DYNAMODB_TABLE']
+    processed_bucket = "propertiesappstack-processedproperties39d0d984-8djaexmqtn7b"
+    table_name = "PropertiesAppStack-PropertiesTable324F3970-1ER6JBD17VLE1"
 
     # Extract S3 bucket and file details
     raw_bucket = event['Records'][0]['s3']['bucket']['name']
