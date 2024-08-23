@@ -1,0 +1,14 @@
+{
+    "Records": [
+      {
+        "s3": {
+          "bucket": {
+            "name": "propertiesappstack-rawpropertieseb3d18db-juhnvptkk2hz"
+          },
+          "object": {
+            "key": "properties_data.csv"
+          }
+        }
+      }
+    ]
+  }

@@ -1,0 +1,13 @@
+Resources:
+  CurrencyStandardizer:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.10
+      CodeUri: .
+      MemorySize: 512  # Increase the memory size if needed (e.g., 512 MB or 1024 MB)
+      Timeout: 30
+      Environment:
+        Variables:
+          PROCESSED_BUCKET: "propertiesappstack-processedproperties39d0d984-vmpkjl4zalyt"
+          DYNAMODB_TABLE: "PropertiesAppStack-PropertiesTable324F3970-1V54XY9UPNAP5"
